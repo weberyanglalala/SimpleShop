@@ -1,0 +1,355 @@
+<html>
+<head>
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="" />
+    <link
+        rel="stylesheet"
+        as="style"
+        onload="this.rel='stylesheet'"
+        href="https://fonts.googleapis.com/css2?display=swap&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900&amp;family=Work+Sans%3Awght%40400%3B500%3B700%3B900"
+    />
+
+    <title>Stitch Design</title>
+    <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64," />
+
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+</head>
+<body>
+<div class="relative flex size-full min-h-screen flex-col bg-[#fcfaf8] group/design-root overflow-x-hidden" style='font-family: "Work Sans", "Noto Sans", sans-serif;'>
+    <div class="layout-container flex h-full grow flex-col">
+        <header class="flex justify-center whitespace-nowrap border-b border-solid border-b-[#f3efe7] px-4 md:px-10 py-3">
+            <div class="flex items-center justify-between max-w-[960px] w-full">
+                <div class="flex items-center gap-4 md:gap-8">
+                    <div class="flex items-center gap-4 text-[#1b160d]">
+                        <div class="size-4">
+                            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M36.7273 44C33.9891 44 31.6043 39.8386 30.3636 33.69C29.123 39.8386 26.7382 44 24 44C21.2618 44 18.877 39.8386 17.6364 33.69C16.3957 39.8386 14.0109 44 11.2727 44C7.25611 44 4 35.0457 4 24C4 12.9543 7.25611 4 11.2727 4C14.0109 4 16.3957 8.16144 17.6364 14.31C18.877 8.16144 21.2618 4 24 4C26.7382 4 29.123 8.16144 30.3636 14.31C31.6043 8.16144 33.9891 4 36.7273 4C40.7439 4 44 12.9543 44 24C44 35.0457 40.7439 44 36.7273 44Z"
+                                    fill="currentColor"
+                                ></path>
+                            </svg>
+                        </div>
+                        <h2 class="text-[#1b160d] text-lg font-bold leading-tight tracking-[-0.015em]">Cozy Home</h2>
+                    </div>
+                    <div class="hidden md:flex items-center gap-9">
+                        <a class="text-[#1b160d] text-sm font-medium leading-normal" href="#">Products</a>
+                        <a class="text-[#1b160d] text-sm font-medium leading-normal" href="#">Rooms</a>
+                        <a class="text-[#1b160d] text-sm font-medium leading-normal" href="#">Inspiration</a>
+                        <a class="text-[#1b160d] text-sm font-medium leading-normal" href="#">Offers</a>
+                    </div>
+                </div>
+                <div class="hidden md:flex flex-1 justify-end gap-8">
+                    <div class="flex gap-2">
+                        <button
+                            class="flex max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 bg-[#f3efe7] text-[#1b160d] gap-2 text-sm font-bold leading-normal tracking-[0.015em] min-w-0 px-2.5"
+                        >
+                            <div class="text-[#1b160d]" data-icon="Heart" data-size="20px" data-weight="regular">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" viewBox="0 0 256 256">
+                                    <path
+                                        d="M178,32c-20.65,0-38.73,8.88-50,23.89C116.73,40.88,98.65,32,78,32A62.07,62.07,0,0,0,16,94c0,70,103.79,126.66,108.21,129a8,8,0,0,0,7.58,0C136.21,220.66,240,164,240,94A62.07,62.07,0,0,0,178,32ZM128,206.8C109.74,196.16,32,147.69,32,94A46.06,46.06,0,0,1,78,48c19.45,0,35.78,10.36,42.6,27a8,8,0,0,0,14.8,0c6.82-16.67,23.15-27,42.6-27a46.06,46.06,0,0,1,46,46C224,147.61,146.24,196.15,128,206.8Z"
+                                    ></path>
+                                </svg>
+                            </div>
+                        </button>
+                        <button
+                            class="flex max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 bg-[#f3efe7] text-[#1b160d] gap-2 text-sm font-bold leading-normal tracking-[0.015em] min-w-0 px-2.5"
+                        >
+                            <div class="text-[#1b160d]" data-icon="ShoppingBag" data-size="20px" data-weight="regular">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" viewBox="0 0 256 256">
+                                    <path
+                                        d="M216,40H40A16,16,0,0,0,24,56V200a16,16,0,0,0,16,16H216a16,16,0,0,0,16-16V56A16,16,0,0,0,216,40Zm0,160H40V56H216V200ZM176,88a48,48,0,0,1-96,0-8,8,0,0,1,16,0,32,32,0,0,0,64,0,8,8,0,0,1,16,0Z"
+                                    ></path>
+                                </svg>
+                            </div>
+                        </button>
+                    </div>
+                    <div
+                        class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10"
+                        style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDOZ_lCQ5YvSUXU1Mb5DtLbYM4orssanmhcSb6wrpLG-6hoXCF5ritw3JJ0BNG3x00u86Y8xJJK05N2gCC-f_RF6B9feHo6qorWPouYBrUHwdWO5h0DuqXv6NkMO9RQzBZ4FZulhqmaNCjQQjZMCNe5v7tezsePU0gfmJPyCVoDbqWg8WuPuHj_nP2ixI-24hiU-soVk1yFGzmXHwG2bL0zmfLl8o5ju95l6laET5wBdcAwWE-dJGZrZF2pUGyQKeLOnBKtpALFOp5D");'
+                    ></div>
+                </div>
+                <button id="mobile-menu-toggle" class="md:hidden flex items-center justify-center h-10 w-10 text-[#1b160d]">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+                        <path d="M224,128a8,8,0,0,1-8,8H40a8,8,0,0,1,0-16H216A8,8,0,0,1,224,128ZM40,72H216a8,8,0,0,0,0-16H40a8,8,0,0,0,0,16ZM216,184H40a8,8,0,0,0,0,16H216a8,8,0,0,0,0-16Z"></path>
+                    </svg>
+                </button>
+            </div>
+        </header>
+        <aside id="mobile-sidebar" class="md:hidden fixed inset-y-0 left-0 z-50 w-64 bg-[#fcfaf8] border-r border-[#e7dfcf] transform -translate-x-full transition-transform duration-300 ease-in-out">
+            <div class="flex flex-col h-full">
+                <div class="flex items-center justify-end p-4 border-b border-[#e7dfcf]">
+                    <button id="mobile-menu-close" class="flex items-center justify-center h-8 w-8 text-[#1b160d]">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" viewBox="0 0 256 256">
+                            <path d="M205.66,194.34a8,8,0,0,1-11.32,11.32L128,139.31,61.66,205.66a8,8,0,0,1-11.32-11.32L116.69,128,50.34,61.66A8,8,0,0,1,61.66,50.34L128,116.69l66.34-66.35a8,8,0,0,1,11.32,11.32L139.31,128Z"></path>
+                        </svg>
+                    </button>
+                </div>
+                <nav class="flex flex-col p-4 gap-2">
+                    <a class="text-[#1b160d] text-base font-medium leading-normal py-3 px-4 hover:bg-[#f3efe7] rounded-lg" href="#">Products</a>
+                    <a class="text-[#1b160d] text-base font-medium leading-normal py-3 px-4 hover:bg-[#f3efe7] rounded-lg" href="#">Rooms</a>
+                    <a class="text-[#1b160d] text-base font-medium leading-normal py-3 px-4 hover:bg-[#f3efe7] rounded-lg" href="#">Inspiration</a>
+                    <a class="text-[#1b160d] text-base font-medium leading-normal py-3 px-4 hover:bg-[#f3efe7] rounded-lg" href="#">Offers</a>
+                </nav>
+                <div class="flex flex-col gap-2 p-4 border-t border-[#e7dfcf] mt-auto">
+                    <button class="flex items-center gap-3 py-3 px-4 hover:bg-[#f3efe7] rounded-lg text-[#1b160d] text-base font-medium leading-normal">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" viewBox="0 0 256 256">
+                            <path d="M178,32c-20.65,0-38.73,8.88-50,23.89C116.73,40.88,98.65,32,78,32A62.07,62.07,0,0,0,16,94c0,70,103.79,126.66,108.21,129a8,8,0,0,0,7.58,0C136.21,220.66,240,164,240,94A62.07,62.07,0,0,0,178,32ZM128,206.8C109.74,196.16,32,147.69,32,94A46.06,46.06,0,0,1,78,48c19.45,0,35.78,10.36,42.6,27a8,8,0,0,0,14.8,0c6.82-16.67,23.15-27,42.6-27a46.06,46.06,0,0,1,46,46C224,147.61,146.24,196.15,128,206.8Z"></path>
+                        </svg>
+                        <span>Favorites</span>
+                    </button>
+                    <button class="flex items-center gap-3 py-3 px-4 hover:bg-[#f3efe7] rounded-lg text-[#1b160d] text-base font-medium leading-normal">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" viewBox="0 0 256 256">
+                            <path d="M216,40H40A16,16,0,0,0,24,56V200a16,16,0,0,0,16,16H216a16,16,0,0,0,16-16V56A16,16,0,0,0,216,40Zm0,160H40V56H216V200ZM176,88a48,48,0,0,1-96,0-8,8,0,0,1,16,0,32,32,0,0,0,64,0-8,8,0,0,1,16,0Z"></path>
+                        </svg>
+                        <span>Cart</span>
+                    </button>
+                    <button class="flex items-center gap-3 py-3 px-4 hover:bg-[#f3efe7] rounded-lg text-[#1b160d] text-base font-medium leading-normal">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" viewBox="0 0 256 256">
+                            <path d="M230.92,212c-15.23-26.33-38.7-45.21-66.09-54.16a72,72,0,1,0-73.66,0C63.78,166.78,40.31,185.66,25.08,212a8,8,0,1,0,13.85,8c18.84-32.56,52.14-52,89.07-52s70.23,19.44,89.07,52a8,8,0,1,0,13.85-8ZM72,96a56,56,0,1,1,56,56A56.06,56.06,0,0,1,72,96Z"></path>
+                        </svg>
+                        <span>Account</span>
+                    </button>
+                </div>
+            </div>
+        </aside>
+        <div id="mobile-overlay" class="md:hidden hidden fixed inset-0 bg-black bg-opacity-50 z-40"></div>
+        <script>
+            const menuToggle = document.getElementById('mobile-menu-toggle');
+            const menuClose = document.getElementById('mobile-menu-close');
+            const sidebar = document.getElementById('mobile-sidebar');
+            const overlay = document.getElementById('mobile-overlay');
+
+            function openMenu() {
+                sidebar.classList.remove('-translate-x-full');
+                overlay.classList.remove('hidden');
+            }
+
+            function closeMenu() {
+                sidebar.classList.add('-translate-x-full');
+                overlay.classList.add('hidden');
+            }
+
+            menuToggle.addEventListener('click', openMenu);
+            menuClose.addEventListener('click', closeMenu);
+            overlay.addEventListener('click', closeMenu);
+        </script>
+        <div class="px-40 flex flex-1 justify-center py-5">
+            <div class="layout-content-container flex flex-col max-w-[960px] flex-1">
+                <div class="px-4 py-3">
+                    <label class="flex flex-col min-w-40 h-12 w-full">
+                        <div class="flex w-full flex-1 items-stretch rounded-lg h-full">
+                            <div
+                                class="text-[#9a7e4c] flex border-none bg-[#f3efe7] items-center justify-center pl-4 rounded-l-lg border-r-0"
+                                data-icon="MagnifyingGlass"
+                                data-size="24px"
+                                data-weight="regular"
+                            >
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+                                    <path
+                                        d="M229.66,218.34l-50.07-50.06a88.11,88.11,0,1,0-11.31,11.31l50.06,50.07a8,8,0,0,0,11.32-11.32ZM40,112a72,72,0,1,1,72,72A72.08,72.08,0,0,1,40,112Z"
+                                    ></path>
+                                </svg>
+                            </div>
+                            <input
+                                class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-[#1b160d] focus:outline-0 focus:ring-0 border-none bg-[#f3efe7] focus:border-none h-full placeholder:text-[#9a7e4c] px-4 rounded-r-none border-r-0 pr-2 rounded-l-none border-l-0 pl-2 text-base font-normal leading-normal"
+                                value="Living Room Furniture"
+                            />
+                            <div class="flex items-center justify-center rounded-r-lg border-l-0 border-none bg-[#f3efe7] pr-2 pr-4">
+                                <button
+                                    class="flex max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg bg-transparent text-[#1b160d] gap-2 text-base font-bold leading-normal tracking-[0.015em] h-auto min-w-0 px-0"
+                                >
+                                    <div class="text-[#9a7e4c]" data-icon="XCircle" data-size="24px" data-weight="regular">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+                                            <path
+                                                d="M165.66,101.66,139.31,128l26.35,26.34a8,8,0,0,1-11.32,11.32L128,139.31l-26.34,26.35a8,8,0,0,1-11.32-11.32L116.69,128,90.34,101.66a8,8,0,0,1,11.32-11.32L128,116.69l26.34-26.35a8,8,0,0,1,11.32,11.32ZM232,128A104,104,0,1,1,128,24,104.11,104.11,0,0,1,232,128Zm-16,0a88,88,0,1,0-88,88A88.1,88.1,0,0,0,216,128Z"
+                                            ></path>
+                                        </svg>
+                                    </div>
+                                </button>
+                            </div>
+                        </div>
+                    </label>
+                </div>
+                <h3 class="text-[#1b160d] text-lg font-bold leading-tight tracking-[-0.015em] px-4 pb-2 pt-4">Results for "Living Room Furniture"</h3>
+                <div class="flex gap-3 p-3 flex-wrap pr-4">
+                    <button class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-lg bg-[#f3efe7] pl-4 pr-2">
+                        <p class="text-[#1b160d] text-sm font-medium leading-normal">Category</p>
+                        <div class="text-[#1b160d]" data-icon="CaretDown" data-size="20px" data-weight="regular">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" viewBox="0 0 256 256">
+                                <path d="M213.66,101.66l-80,80a8,8,0,0,1-11.32,0l-80-80A8,8,0,0,1,53.66,90.34L128,164.69l74.34-74.35a8,8,0,0,1,11.32,11.32Z"></path>
+                            </svg>
+                        </div>
+                    </button>
+                    <button class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-lg bg-[#f3efe7] pl-4 pr-2">
+                        <p class="text-[#1b160d] text-sm font-medium leading-normal">Price</p>
+                        <div class="text-[#1b160d]" data-icon="CaretDown" data-size="20px" data-weight="regular">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" viewBox="0 0 256 256">
+                                <path d="M213.66,101.66l-80,80a8,8,0,0,1-11.32,0l-80-80A8,8,0,0,1,53.66,90.34L128,164.69l74.34-74.35a8,8,0,0,1,11.32,11.32Z"></path>
+                            </svg>
+                        </div>
+                    </button>
+                    <button class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-lg bg-[#f3efe7] pl-4 pr-2">
+                        <p class="text-[#1b160d] text-sm font-medium leading-normal">Color</p>
+                        <div class="text-[#1b160d]" data-icon="CaretDown" data-size="20px" data-weight="regular">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" viewBox="0 0 256 256">
+                                <path d="M213.66,101.66l-80,80a8,8,0,0,1-11.32,0l-80-80A8,8,0,0,1,53.66,90.34L128,164.69l74.34-74.35a8,8,0,0,1,11.32,11.32Z"></path>
+                            </svg>
+                        </div>
+                    </button>
+                    <button class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-lg bg-[#f3efe7] pl-4 pr-2">
+                        <p class="text-[#1b160d] text-sm font-medium leading-normal">Material</p>
+                        <div class="text-[#1b160d]" data-icon="CaretDown" data-size="20px" data-weight="regular">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" viewBox="0 0 256 256">
+                                <path d="M213.66,101.66l-80,80a8,8,0,0,1-11.32,0l-80-80A8,8,0,0,1,53.66,90.34L128,164.69l74.34-74.35a8,8,0,0,1,11.32,11.32Z"></path>
+                            </svg>
+                        </div>
+                    </button>
+                </div>
+                <div class="grid grid-cols-[repeat(auto-fit,minmax(158px,1fr))] gap-3 p-4">
+                    <div class="flex flex-col gap-3 pb-3">
+                        <div
+                            class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-lg"
+                            style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBxH6VQctpMMrdBHMBFgBz0BsU3LtbYwREuY47oUWr0lsBY0KY1b5yHuFTTDJAX8KODy1odRCqIHP54VmZNouy5TO6cDW07uH22Xxe6afpyXwdyZ50-2B9Xhtg3fPPlgSnITutysptbcgDmi1BudQ8R7gJ1_2vha3vpP51knoRPsfrUz-_EvFkVZavn7PilpoueUPibROfccXY58yXPwSWTEPW_y_af7sO4CL3xilUYKVlB2Ac5wVcOMOXCLdRtEkgqyWYZogHgqbLW");'
+                        ></div>
+                        <div>
+                            <p class="text-[#1b160d] text-base font-medium leading-normal">Modern Sofa</p>
+                            <p class="text-[#9a7e4c] text-sm font-normal leading-normal">$499</p>
+                        </div>
+                    </div>
+                    <div class="flex flex-col gap-3 pb-3">
+                        <div
+                            class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-lg"
+                            style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDfVhgsNxqt-Lqo0BMBrsK2Az6Pts6gFjAtq31NogS5iM-4mTGuyeKuG1LJf0aIwa3IM9ygcp9_2V_b_Odcp4YWY5qNVhcPBxB1td_QJJpgFK7_b8ecUw-XosWM21MKJ5kiUSfErmqnlXcdXRa2P-BlO2Ad6PcxDnId0y-acod-wef6LenRkg9mMQQcG7UUgy6mLvlgfVWH_7uOT47N8JM-5Vhv1MQ92ysFoy_hHqs5ytE3P85h6qDtt94g3fKjAM4hcXrXGBcnjXh5");'
+                        ></div>
+                        <div>
+                            <p class="text-[#1b160d] text-base font-medium leading-normal">Coffee Table</p>
+                            <p class="text-[#9a7e4c] text-sm font-normal leading-normal">$149</p>
+                        </div>
+                    </div>
+                    <div class="flex flex-col gap-3 pb-3">
+                        <div
+                            class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-lg"
+                            style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCfsMnHQyOnKImAvqEibb0VUz3yu9K-7yei5WFChwdlLV2K97wmbAHwrYg3Qtm5iHoNpMoYd6EUcImlZ94Vz1ptJmBi0fS8kNyIl3G452bmFqcefzR9RKSRdlpN6jLidhQ4o0o1RU9ZjYxyPMViLIZUTwDcPd7q6LE-lMaeX7q4VpYJDJjB82AFkaEAFc3sXXfW0clwGdNi5KrPLt-3G1bFF7ksxZ4d5Fn02XP_INznBRmCmLvYBbbBGVrs9Xdtxg3fqgglVMoGErwe");'
+                        ></div>
+                        <div>
+                            <p class="text-[#1b160d] text-base font-medium leading-normal">TV Stand</p>
+                            <p class="text-[#9a7e4c] text-sm font-normal leading-normal">$299</p>
+                        </div>
+                    </div>
+                    <div class="flex flex-col gap-3 pb-3">
+                        <div
+                            class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-lg"
+                            style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBcsGGhfYGtQk5dDmfuA9QQml4pYpqwF5YxgEEYY5WUpj3uXvcSeGvN-sdmrXSWEZymWY110buPva_vYjz-oi_q_7snlwoDOoWn4EQB_F1Whb8gnDVopQ1xwG31pfxtQ3Tve50jv3hNnQ0znDyr6gXt4APQ4HJDM1fqm8bzHZjS64H70RCplcO2Up5KnLZPoqhbgbbn01f1ChQpJQWXceMWZSypmQYACtEqc1Fc2N0RNk3t6_YgOX2HUE9TjyS3i4_3sDkwpGXRMMBH");'
+                        ></div>
+                        <div>
+                            <p class="text-[#1b160d] text-base font-medium leading-normal">Armchair</p>
+                            <p class="text-[#9a7e4c] text-sm font-normal leading-normal">$199</p>
+                        </div>
+                    </div>
+                    <div class="flex flex-col gap-3 pb-3">
+                        <div
+                            class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-lg"
+                            style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuC4WHSaUkbcraXnn8aB1ASB6C-r4k57dFzBYSCsi7gol7QlADIfTWZBF09HSENziDD0ulLqlUSWkWgQkmEHi8P7_Mo-1xDDqc4-0wFC-XU1TFlwthCt_Xwky-4MIC9phLsJkSQtsYFcE3D5b0PYarYUFbAY6gFfmkYOtrpnI0MMm0xVOjb3u4mMVvZ_COzi8m2tyOeyeSph6iWuicxmuhKFvRchs5c0JXcAWgS4-h71lyb1tldJ95p45-7xeHcWki6UIQhQipO3NbEC");'
+                        ></div>
+                        <div>
+                            <p class="text-[#1b160d] text-base font-medium leading-normal">Bookshelf</p>
+                            <p class="text-[#9a7e4c] text-sm font-normal leading-normal">$129</p>
+                        </div>
+                    </div>
+                    <div class="flex flex-col gap-3 pb-3">
+                        <div
+                            class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-lg"
+                            style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDXYtzBkhGmv6e7m75na4sGiMxclldcUftGQpduwJVP3ShQIOZkixXUNfQ_1AzK4jLHm2rCQl-5vsE1PRss7VbGgRsC-MaThwLXtWBzmJ4w-dkbBY7VB0QkC1449vB67wb4RE2L8r92aK4DfEa-mLsFoY69R1jcSQE7LDrcV-4W-vVMb_g01nOOyf6aKXh-bOJrhfhi123aGkQjU170POHq1hUCy6g4vIQK5f13yX_yCPMBwi1CpRQTssRZMVLGqJ530CYReXhjbD01");'
+                        ></div>
+                        <div>
+                            <p class="text-[#1b160d] text-base font-medium leading-normal">Floor Lamp</p>
+                            <p class="text-[#9a7e4c] text-sm font-normal leading-normal">$79</p>
+                        </div>
+                    </div>
+                    <div class="flex flex-col gap-3 pb-3">
+                        <div
+                            class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-lg"
+                            style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDFLeSg5hgnfyI36TQP_zuYb2PIyctYtpF9yl7kG4UyEnJBF8mgNm2DTOBLmjHDAO81dr9_WRhC6vcgAl2294ixi9W5T_QZ83bUDFs17bQF3Lk5zDekwHCAiXTUDa-WKbpBbpQRx4NifgGOT7Wvb9W3eu8hDLfIEMelpqRi_DWLWhokDnZtFHqnRY9499Bvh5Hc-CbSNttvC6SVri8k_xOwj13cl0k3WWkmPD-oVyESIiYeOg3Cd4M0mng70GJ8gF3XfaOMgmnsT8YC");'
+                        ></div>
+                        <div>
+                            <p class="text-[#1b160d] text-base font-medium leading-normal">Rug</p>
+                            <p class="text-[#9a7e4c] text-sm font-normal leading-normal">$99</p>
+                        </div>
+                    </div>
+                    <div class="flex flex-col gap-3 pb-3">
+                        <div
+                            class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-lg"
+                            style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBZDiicRGY_gF81g4nUn2t5DY4R_47nA5gBNlZGh7MTHvnnxTsZl3aqyoAIi-126QuVR9oUdd3BFsSg39ZQmOptL9eOiRqPMG7CZTXzdpTIvo_D8Gk7_bJhYQw7QMoAjA-XUCWMpeYN7uslw9JB1bqKo7QNrqFYFlEzFiOiLD9gPGxZhbr1m9vvcj8VmDFdyIZTJfGFavi_u5abSU1by0qdxf-qPoQiDPi6REofr7SuFtNCKMjJ_G1D6QdDpHfb3-yYRpQ39iJjHkpx");'
+                        ></div>
+                        <div>
+                            <p class="text-[#1b160d] text-base font-medium leading-normal">Side Table</p>
+                            <p class="text-[#9a7e4c] text-sm font-normal leading-normal">$59</p>
+                        </div>
+                    </div>
+                    <div class="flex flex-col gap-3 pb-3">
+                        <div
+                            class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-lg"
+                            style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAnNJlHlYfNMflVEB3RlvmMGDk-9_Qb09Zk3E1bVV94xqpdyFPZ17Npf9w8DLHUfOPtagITR6E3tRuWmqV_nNlaJhB94LzKpnhfOS5598arJRY1qBXUpPpImpxC481j-cA5myVWM0b9_SyExAzQIsJXi4mkKh4cpGTkIDrm--sDpCeNg8zPCgRDxWKM8EZY8cyyhfv9Y2IA0k5Rq9bjnAfCBMCqmeVpNVsbft860nKBtLCP2VNdbiYsuFImkegfiBW2D4QQIS7ZCRA6");'
+                        ></div>
+                        <div>
+                            <p class="text-[#1b160d] text-base font-medium leading-normal">Ottoman</p>
+                            <p class="text-[#9a7e4c] text-sm font-normal leading-normal">$89</p>
+                        </div>
+                    </div>
+                    <div class="flex flex-col gap-3 pb-3">
+                        <div
+                            class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-lg"
+                            style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCsHkJmPU6iNQ82mrql_m50grdf0QK9PUHocA9wWNyXh-6KAhFReHjbqLy6MZt-QCUAGoX3H5O5OpbGjMvtIDU6cHZSkjwmoSwPVLNT2Qxeg-TFHGdYGb64rREIZx6KY35BAJMmUqK-BO90D5NLUIF4gdXwbPfOspODwcEQSHo0YNQw12GyhvV38GErMuv9summ1ZYXopVo2Kaj5DZeoVIwuG15XJecQjKk-KpJMLS-bhZPwOPeo2R0T8LxsiFFIN6BNHRGSw8us0p5");'
+                        ></div>
+                        <div>
+                            <p class="text-[#1b160d] text-base font-medium leading-normal">Console Table</p>
+                            <p class="text-[#9a7e4c] text-sm font-normal leading-normal">$179</p>
+                        </div>
+                    </div>
+                    <div class="flex flex-col gap-3 pb-3">
+                        <div
+                            class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-lg"
+                            style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDS0B88bAH4bPLVle1EO_iCs7-zakjeZLW2VBdidg7tut0Pz3Dwk86axoYtlhR_ymntPaM1-Lt9zwfuUOBoyi6bzk84vqueJoCC6_qXR5S5hIdHJ_-JpbUsxM4kottsaX_0w6Z1XMILPpJ6j8kPQLoMCm_UGI_DzahxviXyajOYvxjXdOZpOyHCfraEEGfO8Ygzmfib6BX_h_BWX1nKolJdCTkPkP54oupOgWOu0GjZDx9bTi470Sve6djITzA63WLTesoFE24-TEHT");'
+                        ></div>
+                        <div>
+                            <p class="text-[#1b160d] text-base font-medium leading-normal">Dining Table</p>
+                            <p class="text-[#9a7e4c] text-sm font-normal leading-normal">$349</p>
+                        </div>
+                    </div>
+                    <div class="flex flex-col gap-3 pb-3">
+                        <div
+                            class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-lg"
+                            style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAmLrqVnfDuK_YOYQ-dmwq_L4cM0_9sFtgK0XAXZIJaQVKbwcAMz0J30zjjxE805qjgKXxGavzhAahLDkBIu2hM9HgVSA9fciFoGcmwdDxIUO_PQUdFBYPZ2E7TykzLpfmhvRFaZSnHesY1jlTpHrfPZMsW-gXDA4vHQGKO7t3f2dCVmVezXDg2X9XxA0hAyeb8rjP4QxvsKiNYcsImYVdKRcrqc1xe3xiGrKzkY6_gvpRpV_BQLj10OAS79u-2uB1xzzs7QICa27xm");'
+                        ></div>
+                        <div>
+                            <p class="text-[#1b160d] text-base font-medium leading-normal">Dining Chairs</p>
+                            <p class="text-[#9a7e4c] text-sm font-normal leading-normal">$79</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex items-center justify-center p-4">
+                    <a href="#" class="flex size-10 items-center justify-center">
+                        <div class="text-[#1b160d]" data-icon="CaretLeft" data-size="18px" data-weight="regular">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18px" height="18px" fill="currentColor" viewBox="0 0 256 256">
+                                <path d="M165.66,202.34a8,8,0,0,1-11.32,11.32l-80-80a8,8,0,0,1,0-11.32l80-80a8,8,0,0,1,11.32,11.32L91.31,128Z"></path>
+                            </svg>
+                        </div>
+                    </a>
+                    <a class="text-sm font-bold leading-normal tracking-[0.015em] flex size-10 items-center justify-center text-[#1b160d] rounded-full bg-[#f3efe7]" href="#">1</a>
+                    <a class="text-sm font-normal leading-normal flex size-10 items-center justify-center text-[#1b160d] rounded-full" href="#">2</a>
+                    <a class="text-sm font-normal leading-normal flex size-10 items-center justify-center text-[#1b160d] rounded-full" href="#">3</a>
+                    <a class="text-sm font-normal leading-normal flex size-10 items-center justify-center text-[#1b160d] rounded-full" href="#">4</a>
+                    <a class="text-sm font-normal leading-normal flex size-10 items-center justify-center text-[#1b160d] rounded-full" href="#">5</a>
+                    <a href="#" class="flex size-10 items-center justify-center">
+                        <div class="text-[#1b160d]" data-icon="CaretRight" data-size="18px" data-weight="regular">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18px" height="18px" fill="currentColor" viewBox="0 0 256 256">
+                                <path d="M181.66,133.66l-80,80a8,8,0,0,1-11.32-11.32L164.69,128,90.34,53.66a8,8,0,0,1,11.32-11.32l80,80A8,8,0,0,1,181.66,133.66Z"></path>
+                            </svg>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

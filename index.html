@@ -1,0 +1,343 @@
+<html>
+<head>
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="" />
+    <link
+        rel="stylesheet"
+        as="style"
+        onload="this.rel='stylesheet'"
+        href="https://fonts.googleapis.com/css2?display=swap&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900&amp;family=Work+Sans%3Awght%40400%3B500%3B700%3B900"
+    />
+
+    <title>Stitch Design</title>
+    <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64," />
+
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+</head>
+<body>
+<div class="relative flex size-full min-h-screen flex-col bg-[#fcfaf8] group/design-root overflow-x-hidden" style='font-family: "Work Sans", "Noto Sans", sans-serif;'>
+    <div class="layout-container flex h-full grow flex-col">
+        <header class="flex justify-center whitespace-nowrap border-b border-solid border-b-[#f3efe7] px-4 md:px-10 py-3">
+            <div class="flex items-center justify-between max-w-[960px] w-full">
+                <div class="flex items-center gap-4 md:gap-8">
+                    <div class="flex items-center gap-4 text-[#1b160d]">
+                        <div class="size-4">
+                            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_6_330)">
+                                    <path
+                                        fill-rule="evenodd"
+                                        clip-rule="evenodd"
+                                        d="M24 0.757355L47.2426 24L24 47.2426L0.757355 24L24 0.757355ZM21 35.7574V12.2426L9.24264 24L21 35.7574Z"
+                                        fill="currentColor"
+                                    ></path>
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_6_330"><rect width="48" height="48" fill="white"></rect></clipPath>
+                                </defs>
+                            </svg>
+                        </div>
+                        <h2 class="text-[#1b160d] text-lg font-bold leading-tight tracking-[-0.015em]">HomeStyle</h2>
+                    </div>
+                    <div class="hidden md:flex items-center gap-9">
+                        <a class="text-[#1b160d] text-sm font-medium leading-normal" href="#">Products</a>
+                        <a class="text-[#1b160d] text-sm font-medium leading-normal" href="#">Rooms</a>
+                        <a class="text-[#1b160d] text-sm font-medium leading-normal" href="#">Inspiration</a>
+                        <a class="text-[#1b160d] text-sm font-medium leading-normal" href="#">Offers</a>
+                    </div>
+                </div>
+                <div class="hidden md:flex flex-1 justify-end gap-8">
+                    <div class="flex gap-2">
+                        <button
+                            class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-[#f3efe7] text-[#1b160d] text-sm font-bold leading-normal tracking-[0.015em]"
+                        >
+                            <span class="truncate">Cart</span>
+                        </button>
+                        <button
+                            class="flex max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 bg-[#f3efe7] text-[#1b160d] gap-2 text-sm font-bold leading-normal tracking-[0.015em] min-w-0 px-2.5"
+                        >
+                            <div class="text-[#1b160d]" data-icon="Heart" data-size="20px" data-weight="regular">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" viewBox="0 0 256 256">
+                                    <path
+                                        d="M178,32c-20.65,0-38.73,8.88-50,23.89C116.73,40.88,98.65,32,78,32A62.07,62.07,0,0,0,16,94c0,70,103.79,126.66,108.21,129a8,8,0,0,0,7.58,0C136.21,220.66,240,164,240,94A62.07,62.07,0,0,0,178,32ZM128,206.8C109.74,196.16,32,147.69,32,94A46.06,46.06,0,0,1,78,48c19.45,0,35.78,10.36,42.6,27a8,8,0,0,0,14.8,0c6.82-16.67,23.15-27,42.6-27a46.06,46.06,0,0,1,46,46C224,147.61,146.24,196.15,128,206.8Z"
+                                    ></path>
+                                </svg>
+                            </div>
+                        </button>
+                        <button
+                            class="flex max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 bg-[#f3efe7] text-[#1b160d] gap-2 text-sm font-bold leading-normal tracking-[0.015em] min-w-0 px-2.5"
+                        >
+                            <div class="text-[#1b160d]" data-icon="User" data-size="20px" data-weight="regular">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" viewBox="0 0 256 256">
+                                    <path
+                                        d="M230.92,212c-15.23-26.33-38.7-45.21-66.09-54.16a72,72,0,1,0-73.66,0C63.78,166.78,40.31,185.66,25.08,212a8,8,0,1,0,13.85,8c18.84-32.56,52.14-52,89.07-52s70.23,19.44,89.07,52a8,8,0,1,0,13.85-8ZM72,96a56,56,0,1,1,56,56A56.06,56.06,0,0,1,72,96Z"
+                                    ></path>
+                                </svg>
+                            </div>
+                        </button>
+                    </div>
+                </div>
+                <button id="mobile-menu-toggle" class="md:hidden flex items-center justify-center h-10 w-10 text-[#1b160d]">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+                        <path d="M224,128a8,8,0,0,1-8,8H40a8,8,0,0,1,0-16H216A8,8,0,0,1,224,128ZM40,72H216a8,8,0,0,0,0-16H40a8,8,0,0,0,0,16ZM216,184H40a8,8,0,0,0,0,16H216a8,8,0,0,0,0-16Z"></path>
+                    </svg>
+                </button>
+            </div>
+        </header>
+        <aside id="mobile-sidebar" class="md:hidden fixed inset-y-0 left-0 z-50 w-64 bg-[#fcfaf8] border-r border-[#e7dfcf] transform -translate-x-full transition-transform duration-300 ease-in-out">
+            <div class="flex flex-col h-full">
+                <div class="flex items-center justify-end p-4 border-b border-[#e7dfcf]">
+                    <button id="mobile-menu-close" class="flex items-center justify-center h-8 w-8 text-[#1b160d]">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" viewBox="0 0 256 256">
+                            <path d="M205.66,194.34a8,8,0,0,1-11.32,11.32L128,139.31,61.66,205.66a8,8,0,0,1-11.32-11.32L116.69,128,50.34,61.66A8,8,0,0,1,61.66,50.34L128,116.69l66.34-66.35a8,8,0,0,1,11.32,11.32L139.31,128Z"></path>
+                        </svg>
+                    </button>
+                </div>
+                <nav class="flex flex-col p-4 gap-2">
+                    <a class="text-[#1b160d] text-base font-medium leading-normal py-3 px-4 hover:bg-[#f3efe7] rounded-lg" href="#">Products</a>
+                    <a class="text-[#1b160d] text-base font-medium leading-normal py-3 px-4 hover:bg-[#f3efe7] rounded-lg" href="#">Rooms</a>
+                    <a class="text-[#1b160d] text-base font-medium leading-normal py-3 px-4 hover:bg-[#f3efe7] rounded-lg" href="#">Inspiration</a>
+                    <a class="text-[#1b160d] text-base font-medium leading-normal py-3 px-4 hover:bg-[#f3efe7] rounded-lg" href="#">Offers</a>
+                </nav>
+                <div class="flex flex-col gap-2 p-4 border-t border-[#e7dfcf] mt-auto">
+                    <button class="flex items-center gap-3 py-3 px-4 hover:bg-[#f3efe7] rounded-lg text-[#1b160d] text-base font-medium leading-normal">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" viewBox="0 0 256 256">
+                            <path d="M216,40H40A16,16,0,0,0,24,56V200a16,16,0,0,0,16,16H216a16,16,0,0,0,16-16V56A16,16,0,0,0,216,40Zm0,160H40V56H216V200ZM176,88a48,48,0,0,1-96,0,8,8,0,0,1,16,0,32,32,0,0,0,64,0,8,8,0,0,1,16,0Z"></path>
+                        </svg>
+                        <span>Cart</span>
+                    </button>
+                    <button class="flex items-center gap-3 py-3 px-4 hover:bg-[#f3efe7] rounded-lg text-[#1b160d] text-base font-medium leading-normal">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" viewBox="0 0 256 256">
+                            <path d="M178,32c-20.65,0-38.73,8.88-50,23.89C116.73,40.88,98.65,32,78,32A62.07,62.07,0,0,0,16,94c0,70,103.79,126.66,108.21,129a8,8,0,0,0,7.58,0C136.21,220.66,240,164,240,94A62.07,62.07,0,0,0,178,32ZM128,206.8C109.74,196.16,32,147.69,32,94A46.06,46.06,0,0,1,78,48c19.45,0,35.78,10.36,42.6,27a8,8,0,0,0,14.8,0c6.82-16.67,23.15-27,42.6-27a46.06,46.06,0,0,1,46,46C224,147.61,146.24,196.15,128,206.8Z"></path>
+                        </svg>
+                        <span>Favorites</span>
+                    </button>
+                    <button class="flex items-center gap-3 py-3 px-4 hover:bg-[#f3efe7] rounded-lg text-[#1b160d] text-base font-medium leading-normal">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" viewBox="0 0 256 256">
+                            <path d="M230.92,212c-15.23-26.33-38.7-45.21-66.09-54.16a72,72,0,1,0-73.66,0C63.78,166.78,40.31,185.66,25.08,212a8,8,0,1,0,13.85,8c18.84-32.56,52.14-52,89.07-52s70.23,19.44,89.07,52a8,8,0,1,0,13.85-8ZM72,96a56,56,0,1,1,56,56A56.06,56.06,0,0,1,72,96Z"></path>
+                        </svg>
+                        <span>Account</span>
+                    </button>
+                </div>
+            </div>
+        </aside>
+        <div id="mobile-overlay" class="md:hidden hidden fixed inset-0 bg-black bg-opacity-50 z-40"></div>
+        <script>
+            const menuToggle = document.getElementById('mobile-menu-toggle');
+            const menuClose = document.getElementById('mobile-menu-close');
+            const sidebar = document.getElementById('mobile-sidebar');
+            const overlay = document.getElementById('mobile-overlay');
+
+            function openMenu() {
+                sidebar.classList.remove('-translate-x-full');
+                overlay.classList.remove('hidden');
+            }
+
+            function closeMenu() {
+                sidebar.classList.add('-translate-x-full');
+                overlay.classList.add('hidden');
+            }
+
+            menuToggle.addEventListener('click', openMenu);
+            menuClose.addEventListener('click', closeMenu);
+            overlay.addEventListener('click', closeMenu);
+        </script>
+        <div class="px-40 flex flex-1 justify-center py-5">
+            <div class="layout-content-container flex flex-col max-w-[960px] flex-1">
+                <div class="@container">
+                    <div class="@[480px]:p-4">
+                        <div
+                            class="flex min-h-[480px] flex-col gap-6 bg-cover bg-center bg-no-repeat @[480px]:gap-8 @[480px]:rounded-lg items-start justify-end px-4 pb-10 @[480px]:px-10"
+                            style='background-image: linear-gradient(rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.4) 100%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuA-p3S_8ezIYflJJPv5gc6K5uv6XKmWs8qUxeHkkHPNEWNP3BpuCP_-jXni_GTSC9xw8gHzjkb0xhdbHSyi0WEzN9tYNYoO6OF-i17U9OKT9bkBzatw3ZZxjmvQztyaIKsXgS0wiEXM4MLMuwdCpowDJAyrf8vArvvgxBsyf_vx64LboiDO0gv33MVQaIEKBhApxIuCLR451Um1jhLpreuWuIFFnc0ygvTh3ROoXpO0S8l7M8Sy7S34JNsnIGFUwy-eaUufJcEu5Wiq");'
+                        >
+                            <div class="flex flex-col gap-2 text-left">
+                                <h1
+                                    class="text-white text-4xl font-black leading-tight tracking-[-0.033em] @[480px]:text-5xl @[480px]:font-black @[480px]:leading-tight @[480px]:tracking-[-0.033em]"
+                                >
+                                    Create your dream home
+                                </h1>
+                                <h2 class="text-white text-sm font-normal leading-normal @[480px]:text-base @[480px]:font-normal @[480px]:leading-normal">
+                                    Find everything you need to furnish your space, from sofas to lighting.
+                                </h2>
+                            </div>
+                            <button
+                                class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 @[480px]:h-12 @[480px]:px-5 bg-[#efb13d] text-[#1b160d] text-sm font-bold leading-normal tracking-[0.015em] @[480px]:text-base @[480px]:font-bold @[480px]:leading-normal @[480px]:tracking-[0.015em]"
+                            >
+                                <span class="truncate">Shop Now</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <h2 class="text-[#1b160d] text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">Shop by Category</h2>
+                <div class="grid grid-cols-[repeat(auto-fit,minmax(158px,1fr))] gap-3 p-4">
+                    <div class="flex flex-col gap-3 pb-3">
+                        <div
+                            class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-lg"
+                            style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDS24DT7LVbuFeE8zKoGh7LslJEMNxfVjxAhtq6YoumFfwV-QCF2sEeEipGHX-f4JJuyYeXBk2bRNpluUB2BwcW7TYcbBnV6omc2cqd6ZR2WCVeqUUjjoiRyu3AlJvR_P9Bk3xZKAAe9vr3dRKdSbqZyzpSPznDJzr1e2xm3TPHof0Ul3ZU7waaq_dd34pzxb7wyo9cCpHk2500XV-kH-gXyMeqRnV19z8qE5nFLbYS29rh25L_mEXAcXp9wZYBOROyNDmb1s7j7a7S");'
+                        ></div>
+                        <p class="text-[#1b160d] text-base font-medium leading-normal">Living Room</p>
+                    </div>
+                    <div class="flex flex-col gap-3 pb-3">
+                        <div
+                            class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-lg"
+                            style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDIQiwWEUe7kM_QqwDnwtwF-3itdiiNrZhFevhkfPywHEy5WinrBdn6-O94drSiVZ3cpYxOf9KgAe2KN8HtLunSUGwkb4Osa49a2CVU_SEUQmh4fju1jfEi6LOflaGyPdgdvlK3g9G4aTm8exDbJKR-DcQ8HzzWRpFnAnpA07uJpgK3tI4JPGj-dLGcQHW1beM5B767pUZuoduWJZhVXDcoNzQ9fhcXK1DDtWs5QA0Jj3ufEzGFZoVqL_SoVaiv8TfXRfWeTFELL4Wk");'
+                        ></div>
+                        <p class="text-[#1b160d] text-base font-medium leading-normal">Bedroom</p>
+                    </div>
+                    <div class="flex flex-col gap-3 pb-3">
+                        <div
+                            class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-lg"
+                            style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAco94_uJSW0aZs-KynjsaKR1RBzMdcq0bueECPERAhhnkF1qmIUfAXjfIFf8PzejOPNi88L_MKVEk5afX6K8Om421DHr1APoV4eA8zQuOXZofHuwjLFlEiTISAkV24Y-CDjN5Z_XcHYhjUS_C6kHFjlR29rRjDzaDZZePTtDIVyoAskzDlLJ76PKxjbhcW62m8e9OHUZ5PinomHzNW_TmocC9BpYdk4zZ-ZAQwgKRKp2kQHEKp8WL2eyJS8qHLuMFlxSiuTVg5SQEo");'
+                        ></div>
+                        <p class="text-[#1b160d] text-base font-medium leading-normal">Kitchen</p>
+                    </div>
+                    <div class="flex flex-col gap-3 pb-3">
+                        <div
+                            class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-lg"
+                            style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCOJOFGUjWoycMxyrKosGGyuX70NnpXQ3b7NjFgM3BvkQxF1mq5yQnPoD7tqc-SH3xcfQbXUwrFgH_I73Jk5lGhEDkm0TyYHKdXKv2CLtV1zqY42gaOXYe9fCBCvn6DkO7ilT16jYVUcrt3tffnLNkyff55ICnErsN_CNbqL8u0cmkyVRMRe3CLZtOJm1PrXjEkhj-HMBnS98OAqRUCx9v1FH2WF8OEgO2fUlaQm0SgF72F8WS-6OTTSSBe4wRc66yT_0yqaI6bM_tj");'
+                        ></div>
+                        <p class="text-[#1b160d] text-base font-medium leading-normal">Dining Room</p>
+                    </div>
+                    <div class="flex flex-col gap-3 pb-3">
+                        <div
+                            class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-lg"
+                            style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBA4HTOic65OpFWkzzDcr0sQiYiWdrIoeCzYBc3VVtj1JM0gCykWcVO_hVPvNMEH4WOK77CFeBaeLHLmk8BZhIkT3sgMRPaOeCArmJUplgPiJ6dmT-x5qm7XOUkN70dAlCBa2Z8yiGLQATHQmEVrV3xNisHfFi70mYrxma2KJvJksqx_dFVm9HMslhgH7NwOch5aKaA__5rUjUXT-D6jI634Ot8jVElFq-9dSOEbx5KSvgtZd7XeZ9D1ObRqWmljh04IWbxsazHNKbG");'
+                        ></div>
+                        <p class="text-[#1b160d] text-base font-medium leading-normal">Bathroom</p>
+                    </div>
+                    <div class="flex flex-col gap-3 pb-3">
+                        <div
+                            class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-lg"
+                            style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBLDzZzOz-sGveCriudsIds9DPpT6sWmXnAmV1Ra355BfzAPx2z6vHgPnWpE5ky_c7sObWoAFn8hgpM6-ANYo61jUtHiEng3t2Uoq7nKZ1AWfzaLKmOrBuTYY4R-HodmkMYCL80bw4RGTJzudg4xL0RxgrvbMQhT0vFq21ZZ1VB4C_hUW9pgSXB7EnpWIPhCyatiqqrZX59-bx_vw2Is7WCqrbRL4ZgbM5WOZ-bLQlj1875caO4XNSWimU_iAS9Pj6s0IBCkXS4RbVq");'
+                        ></div>
+                        <p class="text-[#1b160d] text-base font-medium leading-normal">Home Office</p>
+                    </div>
+                </div>
+                <h2 class="text-[#1b160d] text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">New Arrivals</h2>
+                <div class="flex overflow-y-auto [-ms-scrollbar-style:none] [scrollbar-width:none] [&amp;::-webkit-scrollbar]:hidden">
+                    <div class="flex items-stretch p-4 gap-3">
+                        <div class="flex h-full flex-1 flex-col gap-4 rounded-lg min-w-60">
+                            <div
+                                class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-lg flex flex-col"
+                                style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCDIeoxUyGC8qxu42LypdR5LbFfeubimhH3W24OIucQeGjeOjOJSxCjxVlKf5MZXQZVMTb8HnGloz6uv8t1njRLc-TJ3Hfa-GGmsPb2NJrk_5QwBNH-zDHjpG6WG55-cb_RvJr8m-RJYLGm18QojteagZVtLYLsSM6PxIEXPeMPY4io7pTZt8io8tStsL8wT8pULxw95fv1uOqUbdHx4qkMDr1HcZyQK5OPcdCnFOIjxuWXIyQy08jchq6fvnjvVKHCyMJI6VpRA9ej");'
+                            ></div>
+                            <div>
+                                <p class="text-[#1b160d] text-base font-medium leading-normal">Modern Sofa</p>
+                                <p class="text-[#9a7e4c] text-sm font-normal leading-normal">Comfortable and stylish</p>
+                            </div>
+                        </div>
+                        <div class="flex h-full flex-1 flex-col gap-4 rounded-lg min-w-60">
+                            <div
+                                class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-lg flex flex-col"
+                                style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBgj_wkkMWlU_aDgXgewCiRRZ_HM6Bs9d4ZaOc-5TqFLNgl_STgt-10srajahE4EVAB0XcSDKsPw9r5tjLXxJUIeVHv-YDTMWPdKSyPRxNQPA2_rU4UT4Y45wwCvkPvqKGKF147xuSDLqdC4hvN-vhneHUqoSCT0zbil1Im9ergMM2jg6lOlxfAe-ctIUCKCpykaS4qtUyCqU-d9uTWbEAYIYmK8jG0Zwy_k36voQ3CuOITQyGrd_9YtJkKFZw5NGQ-nHejIDxhRKkm");'
+                            ></div>
+                            <div>
+                                <p class="text-[#1b160d] text-base font-medium leading-normal">Minimalist Bed</p>
+                                <p class="text-[#9a7e4c] text-sm font-normal leading-normal">Elegant and cozy</p>
+                            </div>
+                        </div>
+                        <div class="flex h-full flex-1 flex-col gap-4 rounded-lg min-w-60">
+                            <div
+                                class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-lg flex flex-col"
+                                style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDQ15D_rShZiAY3_4oXk9pH0c012Of-6B6pA6JE9VbB2FARayIt47paUPIM9IGD8-VBqnF4SLgOwUlAEOE4TVrJP8w5Y32C6rRgAfYUvDAIh8Qh-eCUMu-0z235NMr_dl7Ds1QEpuwBUIISj3tCp1qTHE3hZwpUglKQfQddBAGTnfeC21UEr3IqYYXjfzHGvC61QkJtO93_NqNncrpiBQaDs6sKUkNEcP-TFykXbzs7q65eySKEHhSAysb3VsHRIWp4utF4iAvgz-z7");'
+                            ></div>
+                            <div>
+                                <p class="text-[#1b160d] text-base font-medium leading-normal">Kitchen Island</p>
+                                <p class="text-[#9a7e4c] text-sm font-normal leading-normal">Functional and chic</p>
+                            </div>
+                        </div>
+                        <div class="flex h-full flex-1 flex-col gap-4 rounded-lg min-w-60">
+                            <div
+                                class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-lg flex flex-col"
+                                style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAHCOOI29m_bDasdwm5Rsql7SmeYJc51VDkKN2XawXxkF3Ao_GDXNeIpPhv6ZcAqcVXc_I6YLVGDzLpOXq_O1_6SJXTceRPOPgQlCGacGZ3N1UAgZvWb-nzSqg2VeR80FSwrQk_R-eE8npYk-KZ7UX_LncnI40JiP2Mek95r8JIKOh7GowNVb26lBdf16E-5B2Xc8zT23SbXZiRPby5kUzlw6BXokCTILWUhSdN2Q5gTRcHVfF5jVUc6XvUs2M7sxOcYifsbmianFyx");'
+                            ></div>
+                            <div>
+                                <p class="text-[#1b160d] text-base font-medium leading-normal">Dining Table</p>
+                                <p class="text-[#9a7e4c] text-sm font-normal leading-normal">Spacious and modern</p>
+                            </div>
+                        </div>
+                        <div class="flex h-full flex-1 flex-col gap-4 rounded-lg min-w-60">
+                            <div
+                                class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-lg flex flex-col"
+                                style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDThWcC5XcKVMvhYZGqkNhc4u9Z66btj7D5GlbQz4O62evFJmNPJPIxRAKKfAO4Rt8TR6RNESFvcsz9WPNN2k-Ibr8YcjaoVsx09oxhkSTueAOIDfDNArtUHDHuHsL-ux0Tyd8r73chL9dQTPugJjm4UYWwOl1GgeFg-XgghWbfyoCN-R9IUxGMI0QIRZQfn4ycvOeIVQZ322amzNffdOPRjSwaQjqkFB4xWc9SQ2qx1HA7Y3_2vyHqkqipCZ8CrGuT-kDbJ37jNc1p");'
+                            ></div>
+                            <div>
+                                <p class="text-[#1b160d] text-base font-medium leading-normal">Bathroom Vanity</p>
+                                <p class="text-[#9a7e4c] text-sm font-normal leading-normal">Sleek and practical</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <h2 class="text-[#1b160d] text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">Top Sellers</h2>
+                <div class="flex overflow-y-auto [-ms-scrollbar-style:none] [scrollbar-width:none] [&amp;::-webkit-scrollbar]:hidden">
+                    <div class="flex items-stretch p-4 gap-3">
+                        <div class="flex h-full flex-1 flex-col gap-4 rounded-lg min-w-60">
+                            <div
+                                class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-lg flex flex-col"
+                                style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBxQUZSLeGDjTZstPrZKOygTMmxPt_89Sc-kWjw8QCI0lSMb7b_4eij8Eb_b4-fhgxHkSWMksHgHzL1yYqcMajFyqsoE7Nduxu4dQCSM062P31F1cWCwcSHbsKycP25NuHGpQDhisQiXrYAA1dCdx56f3i2WivKU6l9JUmMEZSJfccbPtSPFAMhVvcmC-SKvKLgIT5RImDTjkNNMUoeS8yX3J0n2wR54DD5Fo1wvUXGXZr2PTA3tfDo2GrlJYhJgmdEtRdlA3QBmX_K");'
+                            ></div>
+                            <div>
+                                <p class="text-[#1b160d] text-base font-medium leading-normal">Best Selling Sofa</p>
+                                <p class="text-[#9a7e4c] text-sm font-normal leading-normal">Customer favorite</p>
+                            </div>
+                        </div>
+                        <div class="flex h-full flex-1 flex-col gap-4 rounded-lg min-w-60">
+                            <div
+                                class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-lg flex flex-col"
+                                style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAFgw_Gs4jySpxDk4j05r-GKnFqJPV-JAz-WvbzWkNwhrAbyrfc1XLlMVG8gYmNz8ykbOUHpj66_zTgfJb-DSlW3G9rAic-3ZDU-jeDLCYkO0S0zyC0v65CrDsBPmRUIxqs3asu45n_zj41en1Z6blXc2h4G9d18cz37bm_QeGK0wLVMKEvYGAn7Wc9l1BxoZSJ4uZXH5j0SVoq6yOl0rSYoQAiveO4PFyjg1f7On1WXamHwxC-l9RKh6H5qM3t_Ysp8CaaJ4vKG5Z6");'
+                            ></div>
+                            <div>
+                                <p class="text-[#1b160d] text-base font-medium leading-normal">Popular Bed Frame</p>
+                                <p class="text-[#9a7e4c] text-sm font-normal leading-normal">Highly rated</p>
+                            </div>
+                        </div>
+                        <div class="flex h-full flex-1 flex-col gap-4 rounded-lg min-w-60">
+                            <div
+                                class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-lg flex flex-col"
+                                style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCkdh0msduJihpKmWlR_TA3tETk66IVAVqGRibgJ6biDDw_cZTnvqoaz4WKuN_nkIMG9fKZoqIkFWLMhgj3OyCWQlQO-RQUAbGRuZz2huLnWvLVlveKIRGbOv3AkFHFTFmAlfIfNOT9rTcE4W-uwN0Sze_70T6SQwyfrSPGWYzlYmo_lsGdWah7_BjsJeUlYoQePQHNTznDbPMLCr2SKPcKysA5ZL963KI90CQbHTiKifGStRFSw2sq_-5n3muApNEoDRkFnGlJKczZ");'
+                            ></div>
+                            <div>
+                                <p class="text-[#1b160d] text-base font-medium leading-normal">Top Kitchen Appliance</p>
+                                <p class="text-[#9a7e4c] text-sm font-normal leading-normal">Must-have item</p>
+                            </div>
+                        </div>
+                        <div class="flex h-full flex-1 flex-col gap-4 rounded-lg min-w-60">
+                            <div
+                                class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-lg flex flex-col"
+                                style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuC9mIqBkoZ1SUQZm3OJ4oK4uGYlegXt_wECyV0U_JFtAtlNbNRwtWMXn_sLx2OFERNZOv3wJ2tlnO2VLoCmRYpWuB1wf8kWu1sKGYmUZCZkiFNcAf2PDrVfWrp2jM2k1zjZNS_7lD70PWCcxWzF6ogXbbui-Lgc7UFPZe_AR-7D_bVF3h_0VSEuUleNwiujTZR8D6eJ_IqgReVbU7_bN0cZAJ77mR8Nah8gXImyUhkribkrkkyp89_TqgcrqGPX81YJh1ccQmvw6Lvm");'
+                            ></div>
+                            <div>
+                                <p class="text-[#1b160d] text-base font-medium leading-normal">Favorite Dining Set</p>
+                                <p class="text-[#9a7e4c] text-sm font-normal leading-normal">Top choice</p>
+                            </div>
+                        </div>
+                        <div class="flex h-full flex-1 flex-col gap-4 rounded-lg min-w-60">
+                            <div
+                                class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-lg flex flex-col"
+                                style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDIiQBzCzHUhhguGo2_jKcqoBv8yn9nuMxKSpjLjAySBpwPHHGJr5c6_uEB0tErsa8YzTltBRLaGYwnTWy7SRv2_goHhWzjxfHtqu8N5Oc5GR2ZFxQcHvVyg5OFvJuNwiPzkgaQhOghZAD7D9msXB0C_tPomh3Qz3bVMz6z0f3VJ3g3Nz9EiVMoCikiFHD4FDgFltA2JXuPdT3d6tUDHQKTa7hleRr5TyzlnKBW9Y8YLNBkF1YcZWL7czan-DKpQnbUuBWWsgTJqo7d");'
+                            ></div>
+                            <div>
+                                <p class="text-[#1b160d] text-base font-medium leading-normal">Most Loved Bathroom Accessory</p>
+                                <p class="text-[#9a7e4c] text-sm font-normal leading-normal">Best seller</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="flex justify-center">
+            <div class="flex max-w-[960px] flex-1 flex-col">
+                <footer class="flex flex-col gap-6 px-5 py-10 text-center @container">
+                    <div class="flex flex-wrap items-center justify-center gap-6 @[480px]:flex-row @[480px]:justify-around">
+                        <a class="text-[#9a7e4c] text-base font-normal leading-normal min-w-40" href="#">About Us</a>
+                        <a class="text-[#9a7e4c] text-base font-normal leading-normal min-w-40" href="#">Contact</a>
+                        <a class="text-[#9a7e4c] text-base font-normal leading-normal min-w-40" href="#">FAQ</a>
+                        <a class="text-[#9a7e4c] text-base font-normal leading-normal min-w-40" href="#">Terms of Service</a>
+                        <a class="text-[#9a7e4c] text-base font-normal leading-normal min-w-40" href="#">Privacy Policy</a>
+                    </div>
+                    <p class="text-[#9a7e4c] text-base font-normal leading-normal">@2024 HomeStyle. All rights reserved.</p>
+                </footer>
+            </div>
+        </footer>
+    </div>
+</div>
+</body>
+</html>

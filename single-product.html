@@ -1,0 +1,473 @@
+<html>
+<head>
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="" />
+    <link
+        rel="stylesheet"
+        as="style"
+        onload="this.rel='stylesheet'"
+        href="https://fonts.googleapis.com/css2?display=swap&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900&amp;family=Work+Sans%3Awght%40400%3B500%3B700%3B900"
+    />
+
+    <title>Stitch Design</title>
+    <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64," />
+
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+</head>
+<body>
+<div
+    class="relative flex size-full min-h-screen flex-col bg-[#fcfaf8] group/design-root overflow-x-hidden"
+    style='--select-button-svg: url(&apos;data:image/svg+xml,%3csvg xmlns=%27http://www.w3.org/2000/svg%27 width=%2724px%27 height=%2724px%27 fill=%27rgb(154,126,76)%27 viewBox=%270 0 256 256%27%3e%3cpath d=%27M181.66,170.34a8,8,0,0,1,0,11.32l-48,48a8,8,0,0,1-11.32,0l-48-48a8,8,0,0,1,11.32-11.32L128,212.69l42.34-42.35A8,8,0,0,1,181.66,170.34Zm-96-84.68L128,43.31l42.34,42.35a8,8,0,0,0,11.32-11.32l-48-48a8,8,0,0,0-11.32,0l-48,48A8,8,0,0,0,85.66,85.66Z%27%3e%3c/path%3e%3c/svg%3e&apos;); font-family: "Work Sans", "Noto Sans", sans-serif;'
+>
+    <div class="layout-container flex h-full grow flex-col">
+        <header class="flex justify-center whitespace-nowrap border-b border-solid border-b-[#f3efe7] px-4 md:px-10 py-3">
+            <div class="flex items-center justify-between max-w-[960px] w-full">
+                <div class="flex items-center gap-4 md:gap-8">
+                    <div class="flex items-center gap-4 text-[#1b160d]">
+                        <div class="size-4">
+                            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M36.7273 44C33.9891 44 31.6043 39.8386 30.3636 33.69C29.123 39.8386 26.7382 44 24 44C21.2618 44 18.877 39.8386 17.6364 33.69C16.3957 39.8386 14.0109 44 11.2727 44C7.25611 44 4 35.0457 4 24C4 12.9543 7.25611 4 11.2727 4C14.0109 4 16.3957 8.16144 17.6364 14.31C18.877 8.16144 21.2618 4 24 4C26.7382 4 29.123 8.16144 30.3636 14.31C31.6043 8.16144 33.9891 4 36.7273 4C40.7439 4 44 12.9543 44 24C44 35.0457 40.7439 44 36.7273 44Z"
+                                    fill="currentColor"
+                                ></path>
+                            </svg>
+                        </div>
+                        <h2 class="text-[#1b160d] text-lg font-bold leading-tight tracking-[-0.015em]">Cozy Home</h2>
+                    </div>
+                    <div class="hidden md:flex items-center gap-9">
+                        <a class="text-[#1b160d] text-sm font-medium leading-normal" href="#">Products</a>
+                        <a class="text-[#1b160d] text-sm font-medium leading-normal" href="#">Rooms</a>
+                        <a class="text-[#1b160d] text-sm font-medium leading-normal" href="#">Inspiration</a>
+                        <a class="text-[#1b160d] text-sm font-medium leading-normal" href="#">Offers</a>
+                    </div>
+                </div>
+                <div class="hidden md:flex flex-1 justify-end gap-8">
+                    <div class="flex gap-2">
+                        <button
+                            class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-[#f3efe7] text-[#1b160d] text-sm font-bold leading-normal tracking-[0.015em]"
+                        >
+                            <span class="truncate">Cart (3)</span>
+                        </button>
+                        <button
+                            class="flex max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 bg-[#f3efe7] text-[#1b160d] gap-2 text-sm font-bold leading-normal tracking-[0.015em] min-w-0 px-2.5"
+                        >
+                            <div class="text-[#1b160d]" data-icon="Heart" data-size="20px" data-weight="regular">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" viewBox="0 0 256 256">
+                                    <path
+                                        d="M178,32c-20.65,0-38.73,8.88-50,23.89C116.73,40.88,98.65,32,78,32A62.07,62.07,0,0,0,16,94c0,70,103.79,126.66,108.21,129a8,8,0,0,0,7.58,0C136.21,220.66,240,164,240,94A62.07,62.07,0,0,0,178,32ZM128,206.8C109.74,196.16,32,147.69,32,94A46.06,46.06,0,0,1,78,48c19.45,0,35.78,10.36,42.6,27a8,8,0,0,0,14.8,0c6.82-16.67,23.15-27,42.6-27a46.06,46.06,0,0,1,46,46C224,147.61,146.24,196.15,128,206.8Z"
+                                    ></path>
+                                </svg>
+                            </div>
+                        </button>
+                        <button
+                            class="flex max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 bg-[#f3efe7] text-[#1b160d] gap-2 text-sm font-bold leading-normal tracking-[0.015em] min-w-0 px-2.5"
+                        >
+                            <div class="text-[#1b160d]" data-icon="User" data-size="20px" data-weight="regular">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" viewBox="0 0 256 256">
+                                    <path
+                                        d="M230.92,212c-15.23-26.33-38.7-45.21-66.09-54.16a72,72,0,1,0-73.66,0C63.78,166.78,40.31,185.66,25.08,212a8,8,0,1,0,13.85,8c18.84-32.56,52.14-52,89.07-52s70.23,19.44,89.07,52a8,8,0,1,0,13.85-8ZM72,96a56,56,0,1,1,56,56A56.06,56.06,0,0,1,72,96Z"
+                                    ></path>
+                                </svg>
+                            </div>
+                        </button>
+                    </div>
+                </div>
+                <button id="mobile-menu-toggle" class="md:hidden flex items-center justify-center h-10 w-10 text-[#1b160d]">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+                        <path d="M224,128a8,8,0,0,1-8,8H40a8,8,0,0,1,0-16H216A8,8,0,0,1,224,128ZM40,72H216a8,8,0,0,0,0-16H40a8,8,0,0,0,0,16ZM216,184H40a8,8,0,0,0,0,16H216a8,8,0,0,0,0-16Z"></path>
+                    </svg>
+                </button>
+            </div>
+        </header>
+        <aside id="mobile-sidebar" class="md:hidden fixed inset-y-0 left-0 z-50 w-64 bg-[#fcfaf8] border-r border-[#e7dfcf] transform -translate-x-full transition-transform duration-300 ease-in-out">
+            <div class="flex flex-col h-full">
+                <div class="flex items-center justify-end p-4 border-b border-[#e7dfcf]">
+                    <button id="mobile-menu-close" class="flex items-center justify-center h-8 w-8 text-[#1b160d]">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" viewBox="0 0 256 256">
+                            <path d="M205.66,194.34a8,8,0,0,1-11.32,11.32L128,139.31,61.66,205.66a8,8,0,0,1-11.32-11.32L116.69,128,50.34,61.66A8,8,0,0,1,61.66,50.34L128,116.69l66.34-66.35a8,8,0,0,1,11.32,11.32L139.31,128Z"></path>
+                        </svg>
+                    </button>
+                </div>
+                <nav class="flex flex-col p-4 gap-2">
+                    <a class="text-[#1b160d] text-base font-medium leading-normal py-3 px-4 hover:bg-[#f3efe7] rounded-lg" href="#">Products</a>
+                    <a class="text-[#1b160d] text-base font-medium leading-normal py-3 px-4 hover:bg-[#f3efe7] rounded-lg" href="#">Rooms</a>
+                    <a class="text-[#1b160d] text-base font-medium leading-normal py-3 px-4 hover:bg-[#f3efe7] rounded-lg" href="#">Inspiration</a>
+                    <a class="text-[#1b160d] text-base font-medium leading-normal py-3 px-4 hover:bg-[#f3efe7] rounded-lg" href="#">Offers</a>
+                </nav>
+                <div class="flex flex-col gap-2 p-4 border-t border-[#e7dfcf] mt-auto">
+                    <button class="flex items-center gap-3 py-3 px-4 hover:bg-[#f3efe7] rounded-lg text-[#1b160d] text-base font-medium leading-normal">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" viewBox="0 0 256 256">
+                            <path d="M216,40H40A16,16,0,0,0,24,56V200a16,16,0,0,0,16,16H216a16,16,0,0,0,16-16V56A16,16,0,0,0,216,40Zm0,160H40V56H216V200ZM176,88a48,48,0,0,1-96,0-8,8,0,0,1,16,0,32,32,0,0,0,64,0-8,8,0,0,1,16,0Z"></path>
+                        </svg>
+                        <span>Cart (3)</span>
+                    </button>
+                    <button class="flex items-center gap-3 py-3 px-4 hover:bg-[#f3efe7] rounded-lg text-[#1b160d] text-base font-medium leading-normal">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" viewBox="0 0 256 256">
+                            <path d="M178,32c-20.65,0-38.73,8.88-50,23.89C116.73,40.88,98.65,32,78,32A62.07,62.07,0,0,0,16,94c0,70,103.79,126.66,108.21,129a8,8,0,0,0,7.58,0C136.21,220.66,240,164,240,94A62.07,62.07,0,0,0,178,32ZM128,206.8C109.74,196.16,32,147.69,32,94A46.06,46.06,0,0,1,78,48c19.45,0,35.78,10.36,42.6,27a8,8,0,0,0,14.8,0c6.82-16.67,23.15-27,42.6-27a46.06,46.06,0,0,1,46,46C224,147.61,146.24,196.15,128,206.8Z"></path>
+                        </svg>
+                        <span>Favorites</span>
+                    </button>
+                    <button class="flex items-center gap-3 py-3 px-4 hover:bg-[#f3efe7] rounded-lg text-[#1b160d] text-base font-medium leading-normal">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" viewBox="0 0 256 256">
+                            <path d="M230.92,212c-15.23-26.33-38.7-45.21-66.09-54.16a72,72,0,1,0-73.66,0C63.78,166.78,40.31,185.66,25.08,212a8,8,0,1,0,13.85,8c18.84-32.56,52.14-52,89.07-52s70.23,19.44,89.07,52a8,8,0,1,0,13.85-8ZM72,96a56,56,0,1,1,56,56A56.06,56.06,0,0,1,72,96Z"></path>
+                        </svg>
+                        <span>Account</span>
+                    </button>
+                </div>
+            </div>
+        </aside>
+        <div id="mobile-overlay" class="md:hidden hidden fixed inset-0 bg-black bg-opacity-50 z-40"></div>
+        <script>
+            const menuToggle = document.getElementById('mobile-menu-toggle');
+            const menuClose = document.getElementById('mobile-menu-close');
+            const sidebar = document.getElementById('mobile-sidebar');
+            const overlay = document.getElementById('mobile-overlay');
+
+            function openMenu() {
+                sidebar.classList.remove('-translate-x-full');
+                overlay.classList.remove('hidden');
+            }
+
+            function closeMenu() {
+                sidebar.classList.add('-translate-x-full');
+                overlay.classList.add('hidden');
+            }
+
+            menuToggle.addEventListener('click', openMenu);
+            menuClose.addEventListener('click', closeMenu);
+            overlay.addEventListener('click', closeMenu);
+        </script>
+        <div class="px-40 flex flex-1 justify-center py-5">
+            <div class="layout-content-container flex flex-col max-w-[960px] flex-1">
+                <div class="flex flex-wrap gap-2 p-4">
+                    <a class="text-[#9a7e4c] text-base font-medium leading-normal" href="#">Home</a>
+                    <span class="text-[#9a7e4c] text-base font-medium leading-normal">/</span>
+                    <a class="text-[#9a7e4c] text-base font-medium leading-normal" href="#">Living Room</a>
+                    <span class="text-[#9a7e4c] text-base font-medium leading-normal">/</span>
+                    <span class="text-[#1b160d] text-base font-medium leading-normal">Sofas</span>
+                </div>
+                <h2 class="text-[#1b160d] tracking-light text-[28px] font-bold leading-tight px-4 text-left pb-3 pt-5">Modular Sofa, 3-seat with chaise/Orrsta light grey</h2>
+                <p class="text-[#1b160d] text-base font-normal leading-normal pb-3 pt-1 px-4">
+                    This modular sofa offers flexibility and comfort, perfect for any living space. Its light grey Orrsta fabric adds a touch of elegance and versatility.
+                </p>
+                <div class="flex w-full grow bg-[#fcfaf8] @container p-4">
+                    <div class="w-full gap-1 overflow-hidden bg-[#fcfaf8] @[480px]:gap-2 aspect-[3/2] rounded-lg grid grid-cols-[2fr_1fr_1fr]">
+                        <div
+                            class="w-full bg-center bg-no-repeat bg-cover aspect-auto rounded-none row-span-2"
+                            style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAlX0ISVzQI9YHpa6BL72DVl0hYXDSv3SOLFT_biv7BY_BfAY6lRI9JhJ8umr93i1xNn0d1HZDZO-xn7EFm8DOebsWRu5qFCmCWxFmnFlYANNyd2N0baL5WNifn8Sy4Ks83xCV7OlpjD61j6ctIdJjw3zZqWqwgzFKFHCRjYHg_B-BsKwSjl-jFHXaqPQwJv1d57EQVMyhewkRUms5BjTE9PSxreL4QsUNCUJD8Se7vUj2BpyleE4wvfrhkuXd_1-KVuK6Eu-Df3iCy");'
+                        ></div>
+                        <div
+                            class="w-full bg-center bg-no-repeat bg-cover aspect-auto rounded-none col-span-2"
+                            style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAfhw1ts39AmjkYnPXrLbQOgw_ygqlNLAuQoHTkbye9yuWXanymsEX3BWnQTjk5Y8MNkgbfMLgz72Blp2aqGq8ct_8B30NL8ADFtjhAmFnui6kCaRXsIEM0X1BBFexWRRMtRO1mHx149J0npn7U2WlGyLLd8HP6DA2uVy-Sj9mphUGoBo6-fSwpkgM9Z5wHsCqMXSO1ymxWgK0eOHoF--zhZVMUJDrtMlh9Vmf1Y9a3-_E3RgdMcK-kdKHZj9Z1BB-jTB0uSlDPyti5");'
+                        ></div>
+                        <div
+                            class="w-full bg-center bg-no-repeat bg-cover aspect-auto rounded-none"
+                            style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAZumPdy9LD0Ewridyp9yqDXDv0B3tow9vXDpsE0h389FDskbLihststGJPvHgs5ExHQa7a7M92YzqUpzKniXDYN3UMXWpl1Qc22WO0whNxcpyrRuwopiGfGqrvet2rydqrU5kvcNgmx475WwHeIe4LZ2H1LpBlUMMQ9S2Mhc8jzyP1aa1i3ivJ_4W_Z4s6NSUycgtlZ-y2o_WfqPYEBTOif9Rw13Uxeh7PTp-_h4ddPFBtoGetuCmXC11du4Fv1vevFsglUN8ksp1Q");'
+                        ></div>
+                        <div
+                            class="w-full bg-center bg-no-repeat bg-cover aspect-auto rounded-none"
+                            style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBk_noQhd6LEKHlOOANWKkMjxx1LjefzbOUJsLJIO2Mb0nQzacfAp7ssauTP2KVSCt1Gpa1b6p6dUqD1n1vTnoghQTaIrVr0FEW3KltE5J0MfNoJ28z-AcWUjmfuZeDbkvf5wC0RG1k92Dt9iawxplpyfVZvFdJmnij0RhlmNWw5CD6pq48ufHGKwaNotnHR9YWL-Gb7ylF60AR_RzYgXCB6Hz0UikiQs-n3GNBCgXjM80Iy985Cd7sIe8RhJVrxd4hgwRegxPCQEZF");'
+                        ></div>
+                    </div>
+                </div>
+                <h2 class="text-[#1b160d] text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">Product Details</h2>
+                <div class="p-4 grid grid-cols-[20%_1fr] gap-x-6">
+                    <div class="col-span-2 grid grid-cols-subgrid border-t border-t-[#e7dfcf] py-5">
+                        <p class="text-[#9a7e4c] text-sm font-normal leading-normal">Product Name</p>
+                        <p class="text-[#1b160d] text-sm font-normal leading-normal">Modular Sofa, 3-seat with chaise</p>
+                    </div>
+                    <div class="col-span-2 grid grid-cols-subgrid border-t border-t-[#e7dfcf] py-5">
+                        <p class="text-[#9a7e4c] text-sm font-normal leading-normal">Color</p>
+                        <p class="text-[#1b160d] text-sm font-normal leading-normal">Orrsta light grey</p>
+                    </div>
+                    <div class="col-span-2 grid grid-cols-subgrid border-t border-t-[#e7dfcf] py-5">
+                        <p class="text-[#9a7e4c] text-sm font-normal leading-normal">Material</p>
+                        <p class="text-[#1b160d] text-sm font-normal leading-normal">Fabric, Wood</p>
+                    </div>
+                    <div class="col-span-2 grid grid-cols-subgrid border-t border-t-[#e7dfcf] py-5">
+                        <p class="text-[#9a7e4c] text-sm font-normal leading-normal">Dimensions</p>
+                        <p class="text-[#1b160d] text-sm font-normal leading-normal">240x160x85 cm</p>
+                    </div>
+                </div>
+                <h2 class="text-[#1b160d] text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">Price &amp; Availability</h2>
+                <p class="text-[#1b160d] text-base font-normal leading-normal pb-3 pt-1 px-4">Price: $799</p>
+                <div class="flex max-w-[480px] flex-wrap items-end gap-4 px-4 py-3">
+                    <label class="flex flex-col min-w-40 flex-1">
+                        <select
+                            class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-[#1b160d] focus:outline-0 focus:ring-0 border border-[#e7dfcf] bg-[#fcfaf8] focus:border-[#e7dfcf] h-14 bg-[image:--select-button-svg] placeholder:text-[#9a7e4c] p-[15px] text-base font-normal leading-normal"
+                        >
+                            <option value="one"></option>
+                            <option value="two">two</option>
+                            <option value="three">three</option>
+                        </select>
+                    </label>
+                </div>
+                <div class="flex px-4 py-3 justify-start">
+                    <button
+                        class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-[#efb13d] text-[#1b160d] text-sm font-bold leading-normal tracking-[0.015em]"
+                    >
+                        <span class="truncate">Add to Cart</span>
+                    </button>
+                </div>
+                <h2 class="text-[#1b160d] text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">Customer Reviews</h2>
+                <div class="flex flex-wrap gap-x-8 gap-y-6 p-4">
+                    <div class="flex flex-col gap-2">
+                        <p class="text-[#1b160d] text-4xl font-black leading-tight tracking-[-0.033em]">4.5</p>
+                        <div class="flex gap-0.5">
+                            <div class="text-[#efb13d]" data-icon="Star" data-size="18px" data-weight="fill">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18px" height="18px" fill="currentColor" viewBox="0 0 256 256">
+                                    <path
+                                        d="M234.5,114.38l-45.1,39.36,13.51,58.6a16,16,0,0,1-23.84,17.34l-51.11-31-51,31a16,16,0,0,1-23.84-17.34L66.61,153.8,21.5,114.38a16,16,0,0,1,9.11-28.06l59.46-5.15,23.21-55.36a15.95,15.95,0,0,1,29.44,0h0L166,81.17l59.44,5.15a16,16,0,0,1,9.11,28.06Z"
+                                    ></path>
+                                </svg>
+                            </div>
+                            <div class="text-[#efb13d]" data-icon="Star" data-size="18px" data-weight="fill">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18px" height="18px" fill="currentColor" viewBox="0 0 256 256">
+                                    <path
+                                        d="M234.5,114.38l-45.1,39.36,13.51,58.6a16,16,0,0,1-23.84,17.34l-51.11-31-51,31a16,16,0,0,1-23.84-17.34L66.61,153.8,21.5,114.38a16,16,0,0,1,9.11-28.06l59.46-5.15,23.21-55.36a15.95,15.95,0,0,1,29.44,0h0L166,81.17l59.44,5.15a16,16,0,0,1,9.11,28.06Z"
+                                    ></path>
+                                </svg>
+                            </div>
+                            <div class="text-[#efb13d]" data-icon="Star" data-size="18px" data-weight="fill">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18px" height="18px" fill="currentColor" viewBox="0 0 256 256">
+                                    <path
+                                        d="M234.5,114.38l-45.1,39.36,13.51,58.6a16,16,0,0,1-23.84,17.34l-51.11-31-51,31a16,16,0,0,1-23.84-17.34L66.61,153.8,21.5,114.38a16,16,0,0,1,9.11-28.06l59.46-5.15,23.21-55.36a15.95,15.95,0,0,1,29.44,0h0L166,81.17l59.44,5.15a16,16,0,0,1,9.11,28.06Z"
+                                    ></path>
+                                </svg>
+                            </div>
+                            <div class="text-[#efb13d]" data-icon="Star" data-size="18px" data-weight="fill">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18px" height="18px" fill="currentColor" viewBox="0 0 256 256">
+                                    <path
+                                        d="M234.5,114.38l-45.1,39.36,13.51,58.6a16,16,0,0,1-23.84,17.34l-51.11-31-51,31a16,16,0,0,1-23.84-17.34L66.61,153.8,21.5,114.38a16,16,0,0,1,9.11-28.06l59.46-5.15,23.21-55.36a15.95,15.95,0,0,1,29.44,0h0L166,81.17l59.44,5.15a16,16,0,0,1,9.11,28.06Z"
+                                    ></path>
+                                </svg>
+                            </div>
+                            <div class="text-[#efb13d]" data-icon="Star" data-size="18px" data-weight="regular">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18px" height="18px" fill="currentColor" viewBox="0 0 256 256">
+                                    <path
+                                        d="M239.2,97.29a16,16,0,0,0-13.81-11L166,81.17,142.72,25.81h0a15.95,15.95,0,0,0-29.44,0L90.07,81.17,30.61,86.32a16,16,0,0,0-9.11,28.06L66.61,153.8,53.09,212.34a16,16,0,0,0,23.84,17.34l51-31,51.11,31a16,16,0,0,0,23.84-17.34l-13.51-58.6,45.1-39.36A16,16,0,0,0,239.2,97.29Zm-15.22,5-45.1,39.36a16,16,0,0,0-5.08,15.71L187.35,216v0l-51.07-31a15.9,15.9,0,0,0-16.54,0l-51,31h0L82.2,157.4a16,16,0,0,0-5.08-15.71L32,102.35a.37.37,0,0,1,0-.09l59.44-5.14a16,16,0,0,0,13.35-9.75L128,32.08l23.2,55.29a16,16,0,0,0,13.35,9.75L224,102.26S224,102.32,224,102.33Z"
+                                    ></path>
+                                </svg>
+                            </div>
+                        </div>
+                        <p class="text-[#1b160d] text-base font-normal leading-normal">120 reviews</p>
+                    </div>
+                    <div class="grid min-w-[200px] max-w-[400px] flex-1 grid-cols-[20px_1fr_40px] items-center gap-y-3">
+                        <p class="text-[#1b160d] text-sm font-normal leading-normal">5</p>
+                        <div class="flex h-2 flex-1 overflow-hidden rounded-full bg-[#e7dfcf]"><div class="rounded-full bg-[#efb13d]" style="width: 40%;"></div></div>
+                        <p class="text-[#9a7e4c] text-sm font-normal leading-normal text-right">40%</p>
+                        <p class="text-[#1b160d] text-sm font-normal leading-normal">4</p>
+                        <div class="flex h-2 flex-1 overflow-hidden rounded-full bg-[#e7dfcf]"><div class="rounded-full bg-[#efb13d]" style="width: 30%;"></div></div>
+                        <p class="text-[#9a7e4c] text-sm font-normal leading-normal text-right">30%</p>
+                        <p class="text-[#1b160d] text-sm font-normal leading-normal">3</p>
+                        <div class="flex h-2 flex-1 overflow-hidden rounded-full bg-[#e7dfcf]"><div class="rounded-full bg-[#efb13d]" style="width: 15%;"></div></div>
+                        <p class="text-[#9a7e4c] text-sm font-normal leading-normal text-right">15%</p>
+                        <p class="text-[#1b160d] text-sm font-normal leading-normal">2</p>
+                        <div class="flex h-2 flex-1 overflow-hidden rounded-full bg-[#e7dfcf]"><div class="rounded-full bg-[#efb13d]" style="width: 10%;"></div></div>
+                        <p class="text-[#9a7e4c] text-sm font-normal leading-normal text-right">10%</p>
+                        <p class="text-[#1b160d] text-sm font-normal leading-normal">1</p>
+                        <div class="flex h-2 flex-1 overflow-hidden rounded-full bg-[#e7dfcf]"><div class="rounded-full bg-[#efb13d]" style="width: 5%;"></div></div>
+                        <p class="text-[#9a7e4c] text-sm font-normal leading-normal text-right">5%</p>
+                    </div>
+                </div>
+                <div class="flex flex-col gap-8 overflow-x-hidden bg-[#fcfaf8] p-4">
+                    <div class="flex flex-col gap-3 bg-[#fcfaf8]">
+                        <div class="flex items-center gap-3">
+                            <div
+                                class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10"
+                                style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCRTHSOhGcs-0qIMMdiX0e8r87JiBMVO_NakbYBdK3TdebFO8tzmKNsBRFpA29EnMkhScC-UGC5rqz648YHsJwrw4MrhhehBavPOZiHsqrbCInR8qX2aVRaFY3zx0K8d46XV7PAb9kRrxWgoO0gFMer0JyhtQPJSTE2bf2UuK3u8oiZe1lT9pX6alCSzCRhKr_Bbx_OmbrAyPTDxNwohXMb12PgCYbG-nQkRG9lwOpFtNsOZSMmtvwTINsCodRm_M6oMNDFC0LMBrFQ");'
+                            ></div>
+                            <div class="flex-1">
+                                <p class="text-[#1b160d] text-base font-medium leading-normal">Sophia Carter</p>
+                                <p class="text-[#9a7e4c] text-sm font-normal leading-normal">2023-08-15</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-0.5">
+                            <div class="text-[#efb13d]" data-icon="Star" data-size="20px" data-weight="fill">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" viewBox="0 0 256 256">
+                                    <path
+                                        d="M234.5,114.38l-45.1,39.36,13.51,58.6a16,16,0,0,1-23.84,17.34l-51.11-31-51,31a16,16,0,0,1-23.84-17.34L66.61,153.8,21.5,114.38a16,16,0,0,1,9.11-28.06l59.46-5.15,23.21-55.36a15.95,15.95,0,0,1,29.44,0h0L166,81.17l59.44,5.15a16,16,0,0,1,9.11,28.06Z"
+                                    ></path>
+                                </svg>
+                            </div>
+                            <div class="text-[#efb13d]" data-icon="Star" data-size="20px" data-weight="fill">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" viewBox="0 0 256 256">
+                                    <path
+                                        d="M234.5,114.38l-45.1,39.36,13.51,58.6a16,16,0,0,1-23.84,17.34l-51.11-31-51,31a16,16,0,0,1-23.84-17.34L66.61,153.8,21.5,114.38a16,16,0,0,1,9.11-28.06l59.46-5.15,23.21-55.36a15.95,15.95,0,0,1,29.44,0h0L166,81.17l59.44,5.15a16,16,0,0,1,9.11,28.06Z"
+                                    ></path>
+                                </svg>
+                            </div>
+                            <div class="text-[#efb13d]" data-icon="Star" data-size="20px" data-weight="fill">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" viewBox="0 0 256 256">
+                                    <path
+                                        d="M234.5,114.38l-45.1,39.36,13.51,58.6a16,16,0,0,1-23.84,17.34l-51.11-31-51,31a16,16,0,0,1-23.84-17.34L66.61,153.8,21.5,114.38a16,16,0,0,1,9.11-28.06l59.46-5.15,23.21-55.36a15.95,15.95,0,0,1,29.44,0h0L166,81.17l59.44,5.15a16,16,0,0,1,9.11,28.06Z"
+                                    ></path>
+                                </svg>
+                            </div>
+                            <div class="text-[#efb13d]" data-icon="Star" data-size="20px" data-weight="fill">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" viewBox="0 0 256 256">
+                                    <path
+                                        d="M234.5,114.38l-45.1,39.36,13.51,58.6a16,16,0,0,1-23.84,17.34l-51.11-31-51,31a16,16,0,0,1-23.84-17.34L66.61,153.8,21.5,114.38a16,16,0,0,1,9.11-28.06l59.46-5.15,23.21-55.36a15.95,15.95,0,0,1,29.44,0h0L166,81.17l59.44,5.15a16,16,0,0,1,9.11,28.06Z"
+                                    ></path>
+                                </svg>
+                            </div>
+                            <div class="text-[#efb13d]" data-icon="Star" data-size="20px" data-weight="fill">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" viewBox="0 0 256 256">
+                                    <path
+                                        d="M234.5,114.38l-45.1,39.36,13.51,58.6a16,16,0,0,1-23.84,17.34l-51.11-31-51,31a16,16,0,0,1-23.84-17.34L66.61,153.8,21.5,114.38a16,16,0,0,1,9.11-28.06l59.46-5.15,23.21-55.36a15.95,15.95,0,0,1,29.44,0h0L166,81.17l59.44,5.15a16,16,0,0,1,9.11,28.06Z"
+                                    ></path>
+                                </svg>
+                            </div>
+                        </div>
+                        <p class="text-[#1b160d] text-base font-normal leading-normal">
+                            Absolutely love this sofa! It's incredibly comfortable and the modular design allowed me to customize it to fit my living room perfectly. The light grey color is
+                            beautiful and the fabric is very durable.
+                        </p>
+                    </div>
+                    <div class="flex flex-col gap-3 bg-[#fcfaf8]">
+                        <div class="flex items-center gap-3">
+                            <div
+                                class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10"
+                                style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCAK8vE-lJffMwlJ-cy8_hkY-Do0K5lPJ6WlZNbWEzO9MGjAN-rT0CoixPTP6XNSzA4jKj941tsnmfabH0e1fKwO9tU0_SuJK7GmJdLy4AK0dWVrI6HgDAKI24EtblKtJxRRI_YBFxXGF1EtvqZv4Rnl1PUS-7n_Fkoivo7Sd3hmv6jc9G5BsOgwdikNrBY1KqmVBaMkh15_m3iRtCHB_7fRy0xfog6VHOzMrNPSx6uSF3nf7ZFZi70DvMmYUfos-7taRxd5-tNYLTS");'
+                            ></div>
+                            <div class="flex-1">
+                                <p class="text-[#1b160d] text-base font-medium leading-normal">Ethan Bennett</p>
+                                <p class="text-[#9a7e4c] text-sm font-normal leading-normal">2023-07-20</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-0.5">
+                            <div class="text-[#efb13d]" data-icon="Star" data-size="20px" data-weight="fill">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" viewBox="0 0 256 256">
+                                    <path
+                                        d="M234.5,114.38l-45.1,39.36,13.51,58.6a16,16,0,0,1-23.84,17.34l-51.11-31-51,31a16,16,0,0,1-23.84-17.34L66.61,153.8,21.5,114.38a16,16,0,0,1,9.11-28.06l59.46-5.15,23.21-55.36a15.95,15.95,0,0,1,29.44,0h0L166,81.17l59.44,5.15a16,16,0,0,1,9.11,28.06Z"
+                                    ></path>
+                                </svg>
+                            </div>
+                            <div class="text-[#efb13d]" data-icon="Star" data-size="20px" data-weight="fill">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" viewBox="0 0 256 256">
+                                    <path
+                                        d="M234.5,114.38l-45.1,39.36,13.51,58.6a16,16,0,0,1-23.84,17.34l-51.11-31-51,31a16,16,0,0,1-23.84-17.34L66.61,153.8,21.5,114.38a16,16,0,0,1,9.11-28.06l59.46-5.15,23.21-55.36a15.95,15.95,0,0,1,29.44,0h0L166,81.17l59.44,5.15a16,16,0,0,1,9.11,28.06Z"
+                                    ></path>
+                                </svg>
+                            </div>
+                            <div class="text-[#efb13d]" data-icon="Star" data-size="20px" data-weight="fill">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" viewBox="0 0 256 256">
+                                    <path
+                                        d="M234.5,114.38l-45.1,39.36,13.51,58.6a16,16,0,0,1-23.84,17.34l-51.11-31-51,31a16,16,0,0,1-23.84-17.34L66.61,153.8,21.5,114.38a16,16,0,0,1,9.11-28.06l59.46-5.15,23.21-55.36a15.95,15.95,0,0,1,29.44,0h0L166,81.17l59.44,5.15a16,16,0,0,1,9.11,28.06Z"
+                                    ></path>
+                                </svg>
+                            </div>
+                            <div class="text-[#efb13d]" data-icon="Star" data-size="20px" data-weight="fill">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" viewBox="0 0 256 256">
+                                    <path
+                                        d="M234.5,114.38l-45.1,39.36,13.51,58.6a16,16,0,0,1-23.84,17.34l-51.11-31-51,31a16,16,0,0,1-23.84-17.34L66.61,153.8,21.5,114.38a16,16,0,0,1,9.11-28.06l59.46-5.15,23.21-55.36a15.95,15.95,0,0,1,29.44,0h0L166,81.17l59.44,5.15a16,16,0,0,1,9.11,28.06Z"
+                                    ></path>
+                                </svg>
+                            </div>
+                            <div class="text-[#d7c8ad]" data-icon="Star" data-size="20px" data-weight="regular">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" viewBox="0 0 256 256">
+                                    <path
+                                        d="M239.2,97.29a16,16,0,0,0-13.81-11L166,81.17,142.72,25.81h0a15.95,15.95,0,0,0-29.44,0L90.07,81.17,30.61,86.32a16,16,0,0,0-9.11,28.06L66.61,153.8,53.09,212.34a16,16,0,0,0,23.84,17.34l51-31,51.11,31a16,16,0,0,0,23.84-17.34l-13.51-58.6,45.1-39.36A16,16,0,0,0,239.2,97.29Zm-15.22,5-45.1,39.36a16,16,0,0,0-5.08,15.71L187.35,216v0l-51.07-31a15.9,15.9,0,0,0-16.54,0l-51,31h0L82.2,157.4a16,16,0,0,0-5.08-15.71L32,102.35a.37.37,0,0,1,0-.09l59.44-5.14a16,16,0,0,0,13.35-9.75L128,32.08l23.2,55.29a16,16,0,0,0,13.35,9.75L224,102.26S224,102.32,224,102.33Z"
+                                    ></path>
+                                </svg>
+                            </div>
+                        </div>
+                        <p class="text-[#1b160d] text-base font-normal leading-normal">
+                            The sofa is great overall, but the assembly was a bit challenging. Once it was set up, it looked fantastic and is very comfortable. The chaise is a great addition
+                            for lounging.
+                        </p>
+                    </div>
+                    <div class="flex flex-col gap-3 bg-[#fcfaf8]">
+                        <div class="flex items-center gap-3">
+                            <div
+                                class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10"
+                                style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAjvgXJox9MGiph7VgYlI54KnNoxpPnUjsA7AY0mdL_RK5Vx2UJxk9I0iVeQVrOVQngCziOxveJ4w2S4bO5BD0PUsZ0CNZ66N1LLQ_gqRJGmdWnoDQ0Z0hOzhdusFxnUPGq6GzQYbmTb7lVoQXYwG435pg21um8BrXungKb5rFW64ht9vhNgGO6arkthv2CyTODZQ62GbV5ggydj8oO5cEtsR6x8mMM6WP9e7Os52w-QQNiproXcQhdtPMUyZVrbhWk-IDgxVv6zn6z");'
+                            ></div>
+                            <div class="flex-1">
+                                <p class="text-[#1b160d] text-base font-medium leading-normal">Olivia Hayes</p>
+                                <p class="text-[#9a7e4c] text-sm font-normal leading-normal">2023-06-25</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-0.5">
+                            <div class="text-[#efb13d]" data-icon="Star" data-size="20px" data-weight="fill">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" viewBox="0 0 256 256">
+                                    <path
+                                        d="M234.5,114.38l-45.1,39.36,13.51,58.6a16,16,0,0,1-23.84,17.34l-51.11-31-51,31a16,16,0,0,1-23.84-17.34L66.61,153.8,21.5,114.38a16,16,0,0,1,9.11-28.06l59.46-5.15,23.21-55.36a15.95,15.95,0,0,1,29.44,0h0L166,81.17l59.44,5.15a16,16,0,0,1,9.11,28.06Z"
+                                    ></path>
+                                </svg>
+                            </div>
+                            <div class="text-[#efb13d]" data-icon="Star" data-size="20px" data-weight="fill">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" viewBox="0 0 256 256">
+                                    <path
+                                        d="M234.5,114.38l-45.1,39.36,13.51,58.6a16,16,0,0,1-23.84,17.34l-51.11-31-51,31a16,16,0,0,1-23.84-17.34L66.61,153.8,21.5,114.38a16,16,0,0,1,9.11-28.06l59.46-5.15,23.21-55.36a15.95,15.95,0,0,1,29.44,0h0L166,81.17l59.44,5.15a16,16,0,0,1,9.11,28.06Z"
+                                    ></path>
+                                </svg>
+                            </div>
+                            <div class="text-[#efb13d]" data-icon="Star" data-size="20px" data-weight="fill">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" viewBox="0 0 256 256">
+                                    <path
+                                        d="M234.5,114.38l-45.1,39.36,13.51,58.6a16,16,0,0,1-23.84,17.34l-51.11-31-51,31a16,16,0,0,1-23.84-17.34L66.61,153.8,21.5,114.38a16,16,0,0,1,9.11-28.06l59.46-5.15,23.21-55.36a15.95,15.95,0,0,1,29.44,0h0L166,81.17l59.44,5.15a16,16,0,0,1,9.11,28.06Z"
+                                    ></path>
+                                </svg>
+                            </div>
+                            <div class="text-[#efb13d]" data-icon="Star" data-size="20px" data-weight="fill">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" viewBox="0 0 256 256">
+                                    <path
+                                        d="M234.5,114.38l-45.1,39.36,13.51,58.6a16,16,0,0,1-23.84,17.34l-51.11-31-51,31a16,16,0,0,1-23.84-17.34L66.61,153.8,21.5,114.38a16,16,0,0,1,9.11-28.06l59.46-5.15,23.21-55.36a15.95,15.95,0,0,1,29.44,0h0L166,81.17l59.44,5.15a16,16,0,0,1,9.11,28.06Z"
+                                    ></path>
+                                </svg>
+                            </div>
+                            <div class="text-[#efb13d]" data-icon="Star" data-size="20px" data-weight="fill">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" viewBox="0 0 256 256">
+                                    <path
+                                        d="M234.5,114.38l-45.1,39.36,13.51,58.6a16,16,0,0,1-23.84,17.34l-51.11-31-51,31a16,16,0,0,1-23.84-17.34L66.61,153.8,21.5,114.38a16,16,0,0,1,9.11-28.06l59.46-5.15,23.21-55.36a15.95,15.95,0,0,1,29.44,0h0L166,81.17l59.44,5.15a16,16,0,0,1,9.11,28.06Z"
+                                    ></path>
+                                </svg>
+                            </div>
+                        </div>
+                        <p class="text-[#1b160d] text-base font-normal leading-normal">
+                            This sofa exceeded my expectations. The quality is excellent, and it's very stylish. The modularity is a huge plus, and the light grey color is perfect for my
+                            decor. Highly recommend!
+                        </p>
+                    </div>
+                </div>
+                <h2 class="text-[#1b160d] text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">Related Products</h2>
+                <div class="flex overflow-y-auto [-ms-scrollbar-style:none] [scrollbar-width:none] [&amp;::-webkit-scrollbar]:hidden">
+                    <div class="flex items-stretch p-4 gap-3">
+                        <div class="flex h-full flex-1 flex-col gap-4 rounded-lg min-w-40">
+                            <div
+                                class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-lg flex flex-col"
+                                style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAznI30uwcu74BJZmM8mw8CRnPquc82lLcUhW28oCGQDlcvaGHHveW6dg_zgQ46CPGzviczinyFps7sDQ0hQQr5-7HWd2-axN_tVZt8tgtoauSc6MENYV3558BClIjD31oPbYeEdhWGa7RkPagMCBFy_hA6n6GOs_JH_kiGWMLS9YpGXS2j772I2yszLemvfCGt8vMPtuHxQb5UcETQOPZyeorqWI9_WSJhcEO2nBdQNLbpWBy7sDiANwvkKDYHFwLsCvN0xydtyN5m");'
+                            ></div>
+                            <div>
+                                <p class="text-[#1b160d] text-base font-medium leading-normal">Modern Coffee Table</p>
+                                <p class="text-[#9a7e4c] text-sm font-normal leading-normal">$199</p>
+                            </div>
+                        </div>
+                        <div class="flex h-full flex-1 flex-col gap-4 rounded-lg min-w-40">
+                            <div
+                                class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-lg flex flex-col"
+                                style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDA2q8X2K2Cs4lB-9YMETlgD1yzvOK1hZ3Y0jfn1d00EOR1UdSq4uK8lwOM-Ej5Obn_bBvDdigFrdN_9CThoyCBQEUZ5YrSrbXwz9wNHHV8tYWlP4AUm3PYRXPJ_x1RbQTG_Jb617ehfFSVH2s2otLIB7kLgplQsDEaUowysXMFyv4CP98bSyGwUDp-iL2iqFuH9yzVhavBlJ5CHaCnT2o7v6oo_NV-Q4vVuadhxmgUh2oMVAltuBv33Z5srTk8MkqEMwubkGhmcizg");'
+                            ></div>
+                            <div>
+                                <p class="text-[#1b160d] text-base font-medium leading-normal">Geometric Rug</p>
+                                <p class="text-[#9a7e4c] text-sm font-normal leading-normal">$149</p>
+                            </div>
+                        </div>
+                        <div class="flex h-full flex-1 flex-col gap-4 rounded-lg min-w-40">
+                            <div
+                                class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-lg flex flex-col"
+                                style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuC48-8M0283BtcB5sepk9TjwAVr1hBKOzOW2LiGdQW8_xYoH8ve_iQYQxjy47fLGlN-bPqXoxecI9PbV3KgnZVajJ6vOjJ8XfLY6FykRBx9I8EnUotR8bHrozEvRiTieVhu564kuFz9ovcQ0Xi_X9-ZBWzTQnoBoUrDPzv-Z03BEE-R5tBEldLfFTQBiFIh21SanCnzPaqbkmD8O15hicd7aPmCopLymhhGfliMPW8teYv8KYMceB3Q8vGB2Wg7M8hYAlULpmEtNKRH");'
+                            ></div>
+                            <div>
+                                <p class="text-[#1b160d] text-base font-medium leading-normal">Floor Lamp</p>
+                                <p class="text-[#9a7e4c] text-sm font-normal leading-normal">$79</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
